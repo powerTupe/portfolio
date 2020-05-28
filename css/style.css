@@ -1,0 +1,221 @@
+@import url(./font.css);
+@import url(./partial/variable.css);
+/* header area */
+.header_area{
+    box-shadow: 10px 10px 15px lightgray;
+    position: inherit;
+}
+.header_area .main-menu{
+    width: 80%;
+    margin: auto;
+}
+.header_area .main-menu .navbar .navbar-nav .nav-item{
+    font: normal 500 15px/2px;
+    padding: 2px 15px;
+    font-family: var(--roboto);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.header_area .main-menu .navbar .navbar-nav .active a{
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.header_area .main-menu .navbar .nav-item a{
+    transition: linear 0.6s ease-in;
+}
+.header_area .main-menu .navbar .navbar-nav a:hover{
+    cursor: pointer;
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.header_area .main-menu .navbar .navbar-brand{
+    cursor: pointer;
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+    font-size: 24px;
+}
+/* end header style */
+
+/* banner style */
+.banner1{
+    background-image: linear-gradient(120deg, white 55% , lightgreen );
+}
+.banner{
+    width: 90%;
+    margin: auto;
+}
+.banner .container .row .banner-left,
+.intro .container .row .intro-right{
+    margin-top: 120px;
+    font-family: var(--roboto);
+}
+.banner .container .row .banner-left .text,
+.intro .container .row .intro-right .title{
+    font-size: 44px;
+    font-family: var(--roboto);
+    font-weight: 900;
+    letter-spacing: 2px;
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.banner .container .row .desc,
+.intro .container .row .intro-right .desc{
+    margin-top: 10px;
+}
+.banner .container .row .img img,
+.intro .container .row .img img{
+    width: 550px;
+    height: 500px;
+}
+
+/* end banner style */
+/* intr0 style */
+.intro .container .row .intro-right .title{
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    font-weight: 1000;
+}
+.intro1{
+    background-image: linear-gradient(60deg, white 55% , lightgreen);
+}
+/* end intro style */
+
+/* work area style */
+.work1{
+    background-image: linear-gradient(240deg, white 55% , lightgreen);
+}
+.work1 .work{
+    margin-top: 15px;
+}
+.work1 .container .title{
+    font-size: 30px;
+    text-transform: uppercase;
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 600;
+}
+.work1 .container .row img{
+    width: 100%;
+    margin: 5px auto;
+    height: 180px;
+}
+.work1 .container .row .card1 h2{
+    font-size: 24px;
+    font-weight: 500;   
+    color: black;
+    text-transform: uppercase;
+}
+.work1 .container .row p a{
+    padding: 5px 15px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+}
+.work1 .container .row .card1{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    transition: all 0.6s ease-in;
+}
+.work1 .container .row .card1:hover{
+    box-shadow: 10px 10px 15px lightgreen;
+}
+.work1 .container .row .card1:hover h2{
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/* end work area style */
+/* about style */
+.about{
+    background-image: linear-gradient(320deg, white 55% , lightgreen);
+}
+.about .container h2{
+    font-size: 30px;
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.about .container .row .title{
+    margin-top: 155px;
+    font-size: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.about .container .row ul li{
+    margin-left: 5px;
+    padding: 5px 7px;
+    text-transform: capitalize;
+}
+
+/* follow style */
+.footer{
+    background-image: linear-gradient(180deg, white 55% , lightgreen);
+    margin-top: 25px;
+}
+.footer h2{
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.footer-box{
+    padding: 20px;
+}
+/* responsive css */
+@media only screen and (max-width: 720px){
+    .header_area .main-menu .navbar .navbar-brand{
+        font-size: 18px; 
+    }
+    .banner{
+        text-align: center;
+    }
+    .banner .container .row .img img,
+    .intro .container .row .img img{
+        width: 350px;
+        height: 300px;
+        align-items: center;
+    }
+    .intro .row .intro-right{
+        order: 1;
+        text-align: center;
+    }
+    .intro .row .intro-left{
+        order: 2;
+    }
+    .work1 .container .row{
+        width: 70%;
+        margin: auto;
+    }
+    .work1 .container .row img{
+        width: 100%;
+        height: 200px;
+    }
+    .about .container .row h4{
+        text-align: center;
+    }
+    .about .container .row ul{
+        text-align: center;
+    }
+    .about .container .row ul li{
+        list-style: none;
+    }
+
+}
